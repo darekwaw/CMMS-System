@@ -1,0 +1,9 @@
+@model Cmms.DXWebApplication.Model.SchedulerDataSource
+
+@{
+    var scheduler = Html.DevExpress().Scheduler(Cmms.DXWebApplication.Model.SchedulerHelper.Settings);
+    if(ViewBag.GeneralError != null) {
+        scheduler.SetErrorText(ViewBag.GeneralError);
+    }
+}
+@scheduler.Bind(Model.Appointments, Model.Resources).GetHtml()
