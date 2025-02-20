@@ -41,7 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IReportDefinitionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ReportDefinitionService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cmms.Dal\Cmms.Dal.csproj">
+      <Project>{7EFCED2F-8C2F-4470-8F0B-D68DCE32FD07}</Project>
+      <Name>Cmms.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cmms.Data\Cmms.Data.csproj">
+      <Project>{d39f0c82-a300-4857-865b-9db7a26c295d}</Project>
+      <Name>Cmms.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
