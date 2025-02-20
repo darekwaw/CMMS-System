@@ -1,17 +1,19 @@
-﻿using Cmms.Dal.Database;
-using Cmms.Dal.Interfaces;
+﻿using Cmms.Dal.Interfaces;
 using Cmms.Data.Models;
-using System.Linq;
 
 namespace Cmms.Dal.Repositories
 {
     public class ReportDefinitionRepository : IReportDefinitionRepository
     {
-        private readonly AppDbContext _context;
+        private readonly IUnitOfWork unitOfWork;
 
+        public ReportDefinitionRepository(IUnitOfWork unitOfWork)
+        {
+            this.unitOfWork = unitOfWork;
+        }
         public ReportDefinition GetById(int Id)
         {
-            return _context.ReportDefinitions.FirstOrDefault(d => d.Id == Id);
+            return unitOfWork.ReportDefinitions.GetById(Id);
         }
     }
 }
