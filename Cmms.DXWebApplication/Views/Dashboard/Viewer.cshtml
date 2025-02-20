@@ -1,0 +1,13 @@
+﻿@using DevExpress.DashboardWeb
+@using DevExpress.Web.Mvc
+
+<h2>Dashboard Viewer</h2>
+
+<div>
+    @(Html.DevExpress().Dashboard(settings =>
+    {
+        settings.Name = "dashboardViewer";
+        settings.ControllerName = "Dashboard";
+        settings.WorkingMode = WorkingMode.ViewerOnly;
+    }).GetHtml())
+</div>

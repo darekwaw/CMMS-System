@@ -74,6 +74,13 @@ namespace Cmms.DXWebApplication.Model {
         public DateTime Birthday { get; set; }
     }
 
+    public class DashboardEntity
+    {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string XmlContent { get; set; }
+    }
+
     #region DataProvider 
     public static class DataProvider {
         public static List<Contact> GetContacts() {
@@ -390,6 +397,16 @@ namespace Cmms.DXWebApplication.Model {
                 return issuesIds.Max() + 1;
             else
                 return 1;
+        }
+
+        internal static DashboardEntity GetDashboard(Guid id)
+        {
+            return new DashboardEntity
+            {
+                Id = new Guid(),
+                Name = "Dashboard Cmms System",
+                XmlContent = "ss"
+            };
         }
     }
     #endregion
