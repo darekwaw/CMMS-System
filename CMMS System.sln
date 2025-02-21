@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmms.Dal", "Cmms.Dal\Cmms.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmms.DXWinForms", "Cmms.DXWinForms\Cmms.DXWinForms.csproj", "{C426A34A-74F7-4562-9687-4B43F25CD695}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmms.Common.Gui", "Cmms.Common.Gui\Cmms.Common.Gui.csproj", "{75C17E38-DBA9-45BB-92BD-8AEBE853CE44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C426A34A-74F7-4562-9687-4B43F25CD695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C426A34A-74F7-4562-9687-4B43F25CD695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C426A34A-74F7-4562-9687-4B43F25CD695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C17E38-DBA9-45BB-92BD-8AEBE853CE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C17E38-DBA9-45BB-92BD-8AEBE853CE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C17E38-DBA9-45BB-92BD-8AEBE853CE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C17E38-DBA9-45BB-92BD-8AEBE853CE44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
